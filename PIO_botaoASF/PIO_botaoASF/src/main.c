@@ -55,11 +55,19 @@ int main (void)
 	
 
 	/* Insert application code here, after the board has been initialized. */
-	
+	int estadoSaida = 0;
+	int estadoEntrada = ioport_get_pin_level(BP2);
 	while(1)
 	{
-		
-		if(ioport_get_pin_level(BP2)) ioport_set_pin_level(LED_VERDE,1); // pode se usar TRUE
+		if(estadoEntrada != ioport_get_pin_level(BP2)){
+			estadoEntrada = ioport_get_pin_level(BP2);
+			if(!estadoEntrada)
+				estadoSaida = !estadoSaida;
+			
+		}
+		//if(ioport_get_pin_level(BP2)) ioport_set_pin_level(LED_VERDE,1); // pode se usar TRUE
+		//else ioport_set_pin_level(LED_VERDE,0); //pode se usar FALSE
+		if(estadoSaida) ioport_set_pin_level(LED_VERDE,1); // pode se usar TRUE
 		else ioport_set_pin_level(LED_VERDE,0); //pode se usar FALSE
 	} 
 	
