@@ -220,7 +220,7 @@
     <ResetRule>0</ResetRule>
     <EraseKey />
     <avrtool>com.atmel.avrdbg.tool.samice</avrtool>
-    <avrtoolserialnumber>28012476</avrtoolserialnumber>
+    <avrtoolserialnumber>28012542</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x29A70EE0</avrdeviceexpectedsignature>
     <custom>
       <ToolOptions>
@@ -252,7 +252,7 @@
         <InterfaceName>JTAG</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.samice</ToolType>
-      <ToolNumber>28012476</ToolNumber>
+      <ToolNumber>28012542</ToolNumber>
       <ToolName>SAM-ICE</ToolName>
     </com_atmel_avrdbg_tool_samice>
     <avrtoolinterfaceclock>4000000</avrtoolinterfaceclock>
